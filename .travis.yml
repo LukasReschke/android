@@ -5,6 +5,12 @@ android:
     - tools
     - build-tools-20.0.0
     - android-19
+env:
+  global:
+   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
+   #   via the "travis encrypt" command using the project repo's public key
+   - secure: "Wyu2ICvZXJC7IwPZx4Zm/B3AV3g6Vbe2gr95Dhy7vBXOfxf3EwIIpQLUNI3q8zPO1uXJc2qHihNmywdb13HBmAG6p20nbhu4fkrSY4A9zho6t9oTrknEuihQTfWm2xpwm8yrPdoYtAQL2MTxpqPLM/F7n9Mj8nijxZPbiJ724Lw="
+
 before_install:
   - rm pom.xml
 script:
@@ -12,3 +18,12 @@ script:
   - ant clean
   - ant debug
 
+addons:
+  coverity_scan:
+    project:
+      name: "owncloud/android"
+      description: "The ownCloud Android client"
+    notification_email: lukas@statuscode.ch
+    build_command_prepend: "./setup_env.sh ant && ant clean"
+    build_command:   "ant debug"
+    branch_pattern: coverity_scan
