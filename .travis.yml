@@ -7,9 +7,7 @@ android:
     - android-19
 env:
   global:
-   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
-   #   via the "travis encrypt" command using the project repo's public key
-   - secure: "Wyu2ICvZXJC7IwPZx4Zm/B3AV3g6Vbe2gr95Dhy7vBXOfxf3EwIIpQLUNI3q8zPO1uXJc2qHihNmywdb13HBmAG6p20nbhu4fkrSY4A9zho6t9oTrknEuihQTfWm2xpwm8yrPdoYtAQL2MTxpqPLM/F7n9Mj8nijxZPbiJ724Lw="
+    secure: "T15dxu58CKVHXzKjPTR3Ni1I0KW0rv/ZDQ9mHArjaftpSQwneE3HFCDp0KksBjGdsj/RQzvyVEkx9pj3ZaOJqU7w/K21IXswYT73iriCHTbkCnVxtn0ai+j9/SGIHX5xoa0GuqlkyaQzN2TZr0k+Ovz3xvcZO849JDe4xlw3baFfYTpReOBUBBc+hJgmtIBV+i16uYLlhdYqhyBiRQU4wT4UvlegmXBBDaM2kj3JDyylDDEJcc6wYJ8pqpmhiza2zQ3nk7RM3qmkd83tOCPrbFgEhtO6kKUfwoTx+wEpO/29U6CH6+lYkUoaMzbsKNmFyfpxxNfchrVGi+FhBC3D0hxtKB7V9gdmE2mbysts5Mo0pwwnkwliOG0YTeYnBLNBVgzKI3v00gaTpZqnKarRW2Od1B//sXsU80ywZqZ+FsFmTQ5hlhg1laUTgQ0+jVHCnkMXNXOh5QuJGef/WywBZC4afvmmpvTtCxDXrigVODGCpbwkCcgXogW3TeqNqFMu6KzE6y760y2oMn2MOwqHyA0GjlaUgNevbhIyrPvevFF0k1Ny3W2XdszRIyA5seEKWCdCfGz6UUGGccqnOhHE1LaHbGWTnZRac2KPQjRYQTfrsBNupIgx3JI7UCTSSOruJU3m0XmzO5giAH1n85a0VTlJoGhVq8RNj1mshNVVmCU="
 
 before_install:
   - rm pom.xml
